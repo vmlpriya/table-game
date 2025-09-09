@@ -1,0 +1,125 @@
+/* body {
+	position: relative;
+	background-image: url(./doremon.jpg);
+	background-size: 100% ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+table {
+	border-collapse: collapse;
+	background: linear-gradient(to left top,#FFEDF3,rgb(221, 174, 174));
+	position: absolute;
+	top: 50px;
+	left: 550px;
+}
+td, th {
+	border: 2px solid  #FF8F9B;
+	width: 100px;
+	height: 100px;
+	text-align: center; 
+}
+.icon {
+	width: 10px;
+	height: 10px;
+	color: white;
+	font-size: 50px;
+	line-height: 50px; 
+}
+#a{
+	width: 70px;
+	height: 30px;
+	position: absolute;
+	top: 500px;
+	left: 600px;
+	background-color: #FFEDF3;
+	border-radius: 10px;
+
+}
+#b{
+	width: 70px;
+	height: 30px;
+	position: absolute;
+	top: 500px;
+	left: 680px;
+	background-color: #FFEDF3;
+	border-radius: 10px;
+}
+#c{
+	width: 70px;
+	height: 30px;
+	position: absolute;
+	top: 500px;
+	left: 760px;
+	background-color: #FFEDF3;
+	border-radius: 10px;
+}
+#d{
+	width: 70px;
+	height: 30px;
+	position: absolute;
+	top:500px;
+	left: 840px;
+	background-color: #FFEDF3;
+	border-radius: 10px;
+} */
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./doremon.jpg);
+  background-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  background: linear-gradient(to left top, #FFEDF3, rgb(221, 174, 174));
+  position: absolute;
+}
+
+td {
+  border: 2px solid #FF8F9B;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  position: relative;  /* important so child absolute positions work */
+  overflow: hidden;    /* hide overflow so large image won’t push table */
+}
+.icon img {
+  width: 80px;    /* smaller so it fits */
+  height: 80px;
+  position: absolute;
+  top: 10px;      /* place inside the cell */
+  left: 10px;
+}
+#controls {
+  display: none;
+  position: absolute;
+  display: flex;          /* make row */
+  gap: 10px;              /* space between buttons */
+  justify-content: center;
+}
+
+#controls button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #FFEDF3;
+  cursor: pointer;
+}
+
+#createBtn{
+	background-color: #FFEDF3;
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+}
